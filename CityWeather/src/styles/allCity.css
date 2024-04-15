@@ -1,0 +1,117 @@
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-image: url('https://cdn2.vectorstock.com/i/1000x1000/07/81/seamless-weather-forecast-background-vector-2000781.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .searchResult {
+  position: absolute;
+    top: 80px;
+    right: 40px;
+   
+}
+
+  
+  .searchInput {
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #d41515;
+    border-radius: 10px;
+    margin: 5px;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #ffaa00;
+    color: #fff;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0fbf26;
+  }
+  .autocomplete {
+    text-align: center;
+    padding: 2px;
+    position: absolute;
+
+  
+    max-height: 200px; /* Set your desired maximum height */
+    overflow-y: auto;
+    z-index: 100; /* Ensure it appears above other elements */
+  }
+  /* Hide the scrollbar by default */
+.autocomplete::-webkit-scrollbar {
+    display: none;
+  }
+  .autocomplete h3 {
+    margin-bottom: 5px;
+  }
+  
+  .autocomplete ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .autocomplete ul li {
+    padding: 4px;
+    cursor: pointer;
+  }
+  .selection{
+    margin-top: 100px;
+  }
+  .countrySelection, .citySelection {
+    margin-bottom: 20px;
+  }
+  
+  select {
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  option {
+    padding: 5px;
+  }
+  
+  option:hover {
+    background-color: #f0f0f0;
+  }
+  .timezoneTable {
+    margin-top: 20px;
+  }
+  
+  .timezoneTable table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .timezoneTable th, .timezoneTable td {
+    padding: 10px;
+    text-align: left;
+    font-weight: bolder;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .timezoneTable th {
+    background-color: #f2f2f2;
+  }
+  
+  .timezoneTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

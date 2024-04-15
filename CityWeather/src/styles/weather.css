@@ -1,0 +1,92 @@
+.container1 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.loading-message {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.weather-details-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  grid-gap: 20px; /* Gap between cards */
+}
+
+.weather-detail {
+  text-align: center;
+  background-color: #d4bb589f; /* Card background color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.weather-detail:hover {
+  background-color: #f0f0f0; /* New background color on hover */
+}
+
+.weather-detail h1 {
+  font-size: 16px; /* Heading font size */
+  margin-top: 10px; /* Spacing between data and heading */
+}
+
+.weather-detail-icon {
+  font-size: 24px; /* Icon size */
+  margin-bottom: 10px; /* Spacing between icon and data */
+}
+
+.weather-detail-data {
+  font-size: 20px; /* Data font size */
+}
+
+.city-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  text-align: left;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.table-data {
+  padding: 10px;
+}
+/* For screens smaller than 768px */
+@media (max-width: 767px) {
+  .container1 {
+      max-width: 100%; /* Adjust container width to fit smaller screens */
+      padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  .weather-details-container {
+      grid-template-columns: repeat(1, 1fr); /* Display weather details in a single column on smaller screens */
+  }
+}
+
+/* For screens between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container1 {
+      max-width: 90%; /* Adjust container width to fit medium-sized screens */
+  }
+
+  /* You can add more specific styles for this screen size range if needed */
+}
+
+/* For screens larger than 1023px */
+@media (min-width: 1024px) {
+  /* You can define specific styles for larger screens here */
+}
