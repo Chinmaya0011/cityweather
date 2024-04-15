@@ -31,7 +31,7 @@ const Weather = () => {
 
     return (
         <div className="container1">
-            <h1>{searchTerm}</h1>
+            <h1 style={{textAlign:"center"}}>{searchTerm}</h1>
         {loading ? (
             <div className="loading-message">Loading...</div>
         ) : (

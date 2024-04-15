@@ -1,12 +1,15 @@
 .container1 {
+  justify-items: center;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f0f0f0;
+  background-color: #000000;
+  color: #ffffff;
   border-radius: 8px;
 }
 
 .loading-message {
+  text-align: center;
   font-size: 18px;
   font-weight: bold;
   color: #333;
@@ -20,7 +23,7 @@
 
 .weather-detail {
   text-align: center;
-  background-color: #d4bb589f; /* Card background color */
+  background-color: #000000; /* Card background color */
   border-radius: 8px; /* Rounded corners */
   padding: 20px; /* Padding inside the card */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
@@ -28,10 +31,12 @@
 }
 
 .weather-detail:hover {
-  background-color: #f0f0f0; /* New background color on hover */
+  color: rgb(255, 204, 0);
+  background-color: #3e2492a2; /* New background color on hover */
 }
 
 .weather-detail h1 {
+  text-align: center;
   font-size: 16px; /* Heading font size */
   margin-top: 10px; /* Spacing between data and heading */
 }
